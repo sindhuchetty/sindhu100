@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.9.13 on win32)" generated="20220627 13:31:26.475" rpa="false" schemaversion="3">
+<suite id="s1" name="Demo" source="C:\Users\banamu\Desktop\abc\sindhu100\demo\demo.robot">
+<test id="s1-t1" name="To verify user able to login facebook" line="9">
+<kw name="login facebook">
+<kw name="Open Browser" library="Selenium2Library">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220627 13:31:26.804" level="INFO">Opening browser 'chrome' to base url 'https://www.facebook.com/'.</msg>
+<status status="PASS" starttime="20220627 13:31:26.803" endtime="20220627 13:31:30.609"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>//*[@id="email"]</arg>
+<arg>sindhuchetty0@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220627 13:31:30.609" level="INFO">Typing text 'sindhuchetty0@gmail.com' into text field '//*[@id="email"]'.</msg>
+<status status="PASS" starttime="20220627 13:31:30.609" endtime="20220627 13:31:30.685"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>//*[@id="pass"]</arg>
+<arg>Sindhu@1234</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220627 13:31:30.686" level="INFO">Typing text 'Sindhu@1234' into text field '//*[@id="pass"]'.</msg>
+<status status="PASS" starttime="20220627 13:31:30.685" endtime="20220627 13:31:30.764"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>login</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220627 13:31:30.764" level="INFO">Clicking element 'login'.</msg>
+<status status="PASS" starttime="20220627 13:31:30.764" endtime="20220627 13:31:30.801"/>
+</kw>
+<status status="PASS" starttime="20220627 13:31:26.803" endtime="20220627 13:31:30.802"/>
+</kw>
+<status status="PASS" starttime="20220627 13:31:26.802" endtime="20220627 13:31:30.802"/>
+</test>
+<status status="PASS" starttime="20220627 13:31:26.482" endtime="20220627 13:31:30.806"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Demo">Demo</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
